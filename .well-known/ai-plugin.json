@@ -9,10 +9,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "http://localhost:5001/openapi.yaml",
+    "url": "https://ezam0000.github.io/openaiplug/openapi.yaml",
     "is_user_authenticated": false
   },
-  "logo_url": "http://localhost:5001/logo.png",
+  "logo_url": "https://ezam0000.github.io/openaiplug/logo.png",
   "contact_email": "cruz@beamdata.xyz",
-  "legal_info_url": "http://localhost:5001/LICENSE"
+  "legal_info_url": "https://ezam0000.github.io/openaiplug/LICENSE"
 }

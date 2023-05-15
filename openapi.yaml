@@ -4,7 +4,7 @@ info:
   description: Ask any question or provide a prompt, and get an insightful response to outsmart AI detection systems.
   version: v1
 servers:
-  - url: http://localhost:5001
+  - url: https://ezam0000.github.io/openaiplug
 paths:
   /defeat:
     post:

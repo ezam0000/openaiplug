@@ -1,11 +1,11 @@
-Defeater Plugin
+Defeater
 ================
 
-Welcome to the Defeater Plugin! 🚀
+Welcome to the Defeater - a plugin for OpenAI chatgpt! 🚀
 
 Description:
 ------------
-The Defeater Plugin is a powerful tool designed to help you defeat AI detection software. With this plugin, you can ask questions or provide prompts to get responses that outsmart AI detection systems.
+The Defeater is a powerful tool designed to help you defeat AI detection software. With this plugin, you can ask questions or provide prompts to get responses that outsmart AI detection systems.
 
 Key Features:
 -------------
@@ -34,7 +34,7 @@ Important Notes:
 
 Support:
 --------
-If you encounter any issues or have questions regarding the Defeater Plugin, please reach out to our support team at [support@example.com](mailto:support@example.com).
+If you encounter any issues or have questions regarding the Defeater Plugin, please reach out to our support team at [cruz@beamdata.xyz](mailto:cruz@beamdata.xyz).
 
 Enjoy using the Defeater Plugin and unlock new possibilities to navigate the AI landscape!
 
