@@ -1,8 +1,8 @@
 {
   "schema_version": "v1",
-  "name_for_human": "GPT-Defeater Plugin",
-  "name_for_model": "gpt_defeater",
-  "description_for_human": "Plugin for defeating AI detection software. Ask a question or prompt and get a response.",
+  "name_for_human": "Defeater Plugin",
+  "name_for_model": "defeater",
+  "description_for_human": "Ask any question or provide a prompt, and get an insightful response to outsmart AI detection systems",
   "description_for_model": "Plugin for defeating AI detection software. Ask a question or prompt and get a response.",
   "auth": {
     "type": "none"
@@ -14,5 +14,5 @@
   },
   "logo_url": "http://localhost:5001/logo.png",
   "contact_email": "cruz@beamdata.xyz",
-  "legal_info_url": "http://www.example.com/legal"
+  "legal_info_url": "http://localhost:5001/LICENSE"
 }
