@@ -1,14 +1,14 @@
 openapi: 3.0.1
 info:
-  title: Defeater Plugin
-  description: Plugin-Ask any question or provide a prompt, and get an insightful response to outsmart AI detection systems
+  title: Defeater
+  description: Ask any question or provide a prompt, and get an insightful response to outsmart AI detection systems.
   version: v1
 servers:
   - url: http://localhost:5001
 paths:
   /defeat:
     post:
-      summary: Ask any question or provide a prompt, and get an insightful response to outsmart AI detection systems
+      summary: Ask any question or provide a prompt, and get an insightful response to outsmart AI detection systems.
       operationId: defeatAI
       requestBody:
         content:
