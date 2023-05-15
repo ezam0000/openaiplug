@@ -2,23 +2,27 @@ openapi: 3.0.1
 info:
   title: GPT-Defeater Plugin
   description: Plugin for defeating AI detection software. Ask a question or prompt and get a response.
-  version: 'v1'
+  version: v1
 servers:
   - url: http://localhost:5001
 paths:
   /defeat:
     post:
       summary: Generate a response to defeat AI detection software
+      operationId: defeatAI
       requestBody:
         content:
           application/json:
             schema:
               type: object
               properties:
-                prompt:
+                api_key:
+                  type: string
+                input_text:
                   type: string
               required:
-                - prompt
+                - api_key
+                - input_text
       responses:
         '200':
           description: OK
@@ -28,6 +32,8 @@ paths:
                 type: object
                 properties:
                   response:
-                    type: string
+                    type: array
+                    items:
+                      type: string
               example:
-                response: The generated response to defeat AI detection software.
+                response: []
