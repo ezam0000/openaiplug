@@ -9,10 +9,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://ezam0000.github.io/openaiplug/openapi.yaml",
+    "url": "http://modelista.org/openapi.yaml",
     "is_user_authenticated": false
   },
-  "logo_url": "https://ezam0000.github.io/openaiplug/logo.png",
+  "logo_url": "http://modelista.org/logo.png",
   "contact_email": "cruz@beamdata.xyz",
-  "legal_info_url": "https://ezam0000.github.io/openaiplug/LICENSE"
+  "legal_info_url": "http://modelista.org/LICENSE"
 }
