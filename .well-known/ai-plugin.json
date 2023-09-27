@@ -9,10 +9,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://modelista.org/openapi.yaml",
+    "url": "https://zambrano.uk/openapi.yaml",
     "is_user_authenticated": false
   },
-  "logo_url": "https://modelista.org/logo.png",
+  "logo_url": "https://zambrano.uk/logo.png",
   "contact_email": "cruz@beamdata.xyz",
-  "legal_info_url": "https://modelista.org/LICENSE"
+  "legal_info_url": "https://zambrano.uk/LICENSE"
 }
