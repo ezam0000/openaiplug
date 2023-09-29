@@ -3,17 +3,6 @@ import quart
 import quart_cors
 from quart import request, jsonify
 
-def post_process_output(text):
-    # Introduce slight variability to further emulate human-like responses
-    # Adding or changing punctuation for a more conversational tone
-    if text and text[-1] not in ['.', '!', '?']:
-        text += '.'
-    # Breaking long sentences into shorter ones
-    # This is a simplistic approach; more advanced techniques can be used for better results
-    sentences = text.split('.')
-    new_text = '. '.join([s.strip() for s in sentences if s.strip()])
-    return new_text
-
 app = quart.Quart(__name__)
 app = quart_cors.cors(app)
 
@@ -34,19 +23,19 @@ async def defeat_ai():
     payload = {
         "model": "gpt-4",
         "prompt": input_text,
-        "temperature": 0.9,
+        "temperature": 0.87,
         "max_tokens": 400,
         "top_p": 1.0,
-        "frequency_penalty": 1.2,
-        "presence_penalty": 1.1
+        "frequency_penalty": 1.44,
+        "presence_penalty": 1.29
     }
 
     response = await quart.current_app.async_client.post(url, headers=headers, json=payload)
 
     if response.status_code == 200:
         try:
-            text = post_process_output(response.json()["choices"][0]["text"])
-            paragraphs = text.split("\\n")
+            text = response.json()["choices"][0]["text"]
+            paragraphs = text.split("\n")
             return jsonify({"response": paragraphs})
         except KeyError as e:
             return quart.Response(f"Error: Failed to parse response JSON: {e}", status=500)
