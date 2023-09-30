@@ -6,7 +6,7 @@ info:
 servers:
   - url: https://zambrano.uk
 paths:
-  /defeat:
+  /defo:
     post:
       summary: Ask any question or provide a prompt.
       operationId: defo
