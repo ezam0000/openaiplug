@@ -17,6 +17,10 @@ def post_process_output(text):
 app = quart.Quart(__name__)
 app = quart_cors.cors(app)
 
+import httpx
+
+# ... [other imports]
+
 @app.post("/defo")
 async def defo():
     data = await request.get_json()
@@ -41,7 +45,9 @@ async def defo():
         "presence_penalty": 1.1
     }
 
-    response = await quart.current_app.async_client.post(url, headers=headers, json=payload)
+    async with httpx.AsyncClient() as client:
+        response = await client.post(url, headers=headers, json=payload)
+
 
     if response.status_code == 200:
         try:
