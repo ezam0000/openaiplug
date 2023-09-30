@@ -17,8 +17,8 @@ def post_process_output(text):
 app = quart.Quart(__name__)
 app = quart_cors.cors(app)
 
-@app.post("/defeat")
-async def defeat_ai():
+@app.post("/defo")
+async def defo():
     data = await request.get_json()
     api_key = data.get("api_key")
     input_text = data.get("input_text")

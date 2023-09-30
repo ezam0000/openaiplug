@@ -1,9 +1,9 @@
 {
   "schema_version": "v1",
-  "name_for_human": "Defeater",
-  "name_for_model": "defeater",
-  "description_for_human": "Ask any question or provide a prompt, and get an insightful response to outsmart AI detection systems.",
-  "description_for_model": "Plugin for defeating AI detection software. Ask a question or prompt and get a response.",
+  "name_for_human": "Defo",
+  "name_for_model": "defo",
+  "description_for_human": "Ask any question.",
+  "description_for_model": "Human plugin.",
   "auth": {
     "type": "none"
   },

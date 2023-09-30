@@ -1,15 +1,15 @@
 openapi: 3.0.1
 info:
-  title: Defeater
-  description: Ask any question or provide a prompt, and get an insightful response to outsmart AI detection systems.
-  version: v1
+  title: Defo
+  description: Ask any question or provide a prompt.
+  version: v2
 servers:
   - url: https://zambrano.uk
 paths:
   /defeat:
     post:
-      summary: Ask any question or provide a prompt, and get an insightful response to outsmart AI detection systems.
-      operationId: defeatAI
+      summary: Ask any question or provide a prompt.
+      operationId: defo
       requestBody:
         content:
           application/json:
